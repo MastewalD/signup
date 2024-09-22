@@ -1,127 +1,136 @@
-.signup{
+body{
+    margin: 0px;
+    padding: 10px;
+
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.image{
+    flex: 1;
+   
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.signupForm{
+    font-weight:400;
+    flex: 1; 
+    padding: 100px;
+  
+} 
+.center{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    gap: 50px;
+    flex-direction: column;
+}
+
+.style{
+    
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.all{
+    display: flex;
+    
+}
+.small{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.small div{
+    gap: 25px;
+}
+.large{
+    flex: 1;
+}
+
+p span{
+    color: red;
+}
+
+
+
+input:focus{
+    outline: none;
+}
+.button{
+    background-color: rgb(48, 125, 240);
+    color: white;
+    width: 100%;
+    
+    
+}
+.label_input {
+   display: flex;
+   flex-direction: column;
+   width: 100% ;
+}
+label{
+    position: relative;
+    top: 36px;
+    left: 10px; 
+    width:fit-content;
+    background-color: white;
+      
+}
+.large label{
+    position: relative;
+    top: 11px;
+    
+    
+   
+}
+.inputs input{
+   
+    height: 30px;
+    border-radius: 5px;
+    border: 1.4px solid rgb(150, 149, 149);
+}
+
+.checkbox{
+
+   display: flex;
+   align-items: center;  
+   height: 50px;
+  
+    
+}
+.checkbox input{
+    width: 40px;
+    height: 20px;
+    background-color: orangered;
+   
 }
 @media (max-width:600px){
-    .signup{
-        flex-direction: column;  
+    .parent{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
-
-}
-
-.signupImage {
-    flex: 1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-
-}
-
-
-
-.signupImage img {
-    width: 100%; 
-    height: 100%;
-    max-width: 400px; 
-    max-height: 550px; 
-}
-
-.option div{
-    border: 1px solid blue;
-    height: 30px;
-    width: 100px;
+    .signupForm{
+        flex-direction: column;
+    }
 }
 .option{
     display: flex;
-    gap: 100px;
-}
-.button button{
-   background-color: rgb(13, 146, 223);
-    width: 100%;
-
-    color: white;
-}
-.signupForm .one{
-        width: 100%; 
-    height: 100%;
-    max-width: 400px; 
-     max-height: 550px;
- 
-  
-}
-.signupForm{
-     flex: 1; 
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-  
-}
-.input-container {
-  position: relative;
-  margin: 20px 0;
-
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 
 }
-.inputs{
-    display: flex;
-    gap: auto;
+.option div{
+    border: 1px solid blue;
 }
-.pass{
-    position: relative;
-}
-.checkbox{
-
-display: flex;
-gap: auto;
-}
-p span{
-    color:  red;
-}
-.checkbox input{
-    width: auto;
-}
-.pass{
-    display: flex;
-    /* flex-direction: column;  */
-    margin: 20px 0;
-    
-}
-.pass input{
-    padding: 5px 5px 5px 20px; /* Adjust padding for label space */
-  border: 1px solid #838080; /* Regular border */
-  border-radius: 4px;
-  font-size: 14px;
-  background-color: #fff;
-  width: 100%;
- 
-}
-
-input {
- 
-  padding: 5px 5px 5px 20px; /* Adjust padding for label space */
-  border: 1px solid #838080; /* Regular border */
-  border-radius: 4px;
-  font-size: 14px;
-  background-color: #fff; /* Background color of the input */
-}
-
-label {
-  position: absolute;
-  
-  left: 10px;
-  top: -0.5px; /* Positioning on the border */
-  background-color: #fff;/* Same as input background */
-  padding: 0 5px; /* Some padding for aesthetics */
-  font-size: 14px; /* Smaller font size */
-  color: black; /* Label color */
-  pointer-events: none; /* Prevents label from capturing clicks */
-  margin-top: -12px; /* Pull label up to hide border */
-}
-
-
